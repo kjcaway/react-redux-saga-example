@@ -21,9 +21,9 @@ class SearchContainer extends Component {
     return (
       <div>
         <Search 
-          onChangeInput={this.onChanageInput.bind(this)}
           name={this.state.name}
           onSearch={this.props.onSearch}
+          onChangeInput={this.onChanageInput}
         />
         { 
           this.props.error?<div>Something wrong!</div>
