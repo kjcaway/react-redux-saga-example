@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {memo} from 'react'
 
 const SearchResult = (props) => {
   const viewItems = (data) => {
@@ -19,4 +19,4 @@ const SearchResult = (props) => {
   
 }
 
-export default SearchResult
+export default memo(SearchResult);
