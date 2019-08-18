@@ -2,10 +2,10 @@ export const SEARCH = 'SEARCH';
 export const SEARCH_SUCCESS = 'SEARCH_SUCCESS';
 export const SEARCH_FAIL = 'SEARCH_FAIL';
 
-export function search(data){
+export function search(payload){
   return {
     type: SEARCH,
-    payload: data
+    payload
   }
 }
 

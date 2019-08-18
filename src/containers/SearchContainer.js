@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import {connect } from 'react-redux'
+
 import Search from '../components/Search'
 import SearchResult from '../components/SearchResult'
 
