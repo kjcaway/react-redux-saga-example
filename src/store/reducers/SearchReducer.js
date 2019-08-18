@@ -1,5 +1,7 @@
 import {
-  SEARCH, SEARCH_SUCCESS, SEARCH_FAIL
+  SEARCH, 
+  SEARCH_SUCCESS, 
+  SEARCH_FAIL
 } from '../actions'
 
 const initialState = {

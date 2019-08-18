@@ -12,7 +12,7 @@ class SearchContainer extends Component {
       name: ''
     }
   }
-  onChanageInput(e) {
+  onChanageInput = (e) => {
     this.setState({
       name: e.target.value
     })
