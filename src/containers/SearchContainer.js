@@ -3,7 +3,7 @@ import {connect } from 'react-redux'
 import Search from '../components/Search'
 import SearchResult from '../components/SearchResult'
 
-import * as SearchActions from '../store/actions'
+import * as actions from '../store/actions'
 
 class SearchContainer extends Component {
   constructor(props){
@@ -47,7 +47,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     onSearch: (text) => {
-      dispatch({type: SearchActions.SEARCH, payload: text});
+      dispatch({type: actions.SEARCH, payload: text});
     }
   }
 }

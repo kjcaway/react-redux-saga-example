@@ -1,8 +1,4 @@
-import {
-  SEARCH, 
-  SEARCH_SUCCESS, 
-  SEARCH_FAIL
-} from '../actions'
+import * as actions from '../actions'
 
 const initialState = {
   data: {}
@@ -10,17 +6,17 @@ const initialState = {
 
 export const reducer = (state=initialState, action) => {
   switch(action.type){
-    case SEARCH:
+    case actions.SEARCH:
       return {
         ...state,
         payload: action.payload
       }
-    case SEARCH_SUCCESS:
+    case actions.SEARCH_SUCCESS:
       return {
         ...state,
         data: action.data
       }
-    case SEARCH_FAIL:
+    case actions.SEARCH_FAIL:
       return {
         ...state,
         error: action.error
